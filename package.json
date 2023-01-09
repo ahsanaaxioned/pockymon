@@ -10,6 +10,12 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@11ty/eleventy": "^1.0.2"
+    "@11ty/eleventy": "^1.0.2",
+    "axios": "^1.2.2",
+    "markdown-it-link-attributes": "^4.0.1"
+  },
+  "devDependencies": {
+    "markdown-it": "^13.0.1",
+    "markdown-it-attrs": "^4.1.6"
   }
 }

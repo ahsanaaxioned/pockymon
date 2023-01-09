@@ -190,7 +190,7 @@ header .wrapper ,
   border: 1px solid transparent;
   border-radius: 12px;
   margin: 25px 2% 10px;
-  flex-basis: 22%;
+  flex-basis: 20%;
   box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
   cursor: pointer;
 }
@@ -206,15 +206,26 @@ header .wrapper ,
   box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
 }
 
-.pagination-ctrl {
+.btn-ctrl {
   margin-top: 40px;
   display: flex;
   justify-content: space-between;
 }
 
-.next-btn.next-active{
-  pointer-events: none;
+.btn-link,.prev,.next{
+  padding: 5px 10px;
+  border: 1px solid var(--black);
+  color: var(--nav);
+  font-size: 18px;
+  font-weight: 900;
 }
+
+.btn-link.page-active,.btn-link:hover {
+  border-color: var(--pock-heading);
+  color: var(--pock-heading);
+}
+
+
 
 /* pocklist page end here */
 
