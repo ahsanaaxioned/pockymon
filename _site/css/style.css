@@ -225,6 +225,18 @@ header .wrapper ,
   color: var(--pock-heading);
 }
 
+.data-item {
+  display: block;
+}
+
+.name {
+  margin: 25px 0;
+  display: block;
+  color: var(--pock-heading);
+  font-size: 40px;
+  font-weight: 600;
+  text-align: center;
+}
 
 
 /* pocklist page end here */

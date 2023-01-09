@@ -4,7 +4,8 @@ layout: layouts/base.njk
 pagination:
     data: script
     size: 12
-    alias: script 
+    alias: script
+permalink: pockymon/{{ pagination.pageNumber + 1  }}/index.html
 --- 
 <section class="pock">
  <div class="wrapper">  
@@ -12,7 +13,9 @@ pagination:
     <ul class="pock-list">
     {% for data in script %}
     <li class="pock-item">
+        <a href="/pockdetails/{{data.name}}" class="link" title="{{data.name}}">
         <h2 class="pock-heading">{{data.name}}</h2> 
+        </a>
     </li>
     {% endfor %}
     </ul>
@@ -24,14 +27,18 @@ pagination:
     </li>
     {%- for page in pagination.pages %}
      <li>
-        <a  class="btn-link" href="{{ pagination.hrefs[ loop.index0 ] }}"{% if page.url == pagination.hrefs[ loop.index0 ] %} aria-current="page"{% endif %}> {{ loop.index }}</a>
+       <a  class="btn-link" href="{{ pagination.hrefs[ loop.index0 ] }}"{% if page.url == pagination.hrefs[ loop.index0 ] %} aria-current="page"{% endif %}> {{ loop.index }}</a>
     </li>
     {%- endfor %}
     <li>{% if pagination.href.next %}
-        <a class="next" href="{{pagination.href.next}}">Next</a>
+        <a class="next" href="{{pagination.href.next }}">Next</a>
     {%endif%}
     </li>
     </ul>
     </div>
 </section>
+
+{# permalink: pockymon/{{ pagination.pageNumber + 1 }}/index.html  #}
+
+{# permalink: "/pockymon/{{script[ loop.index ]| slug}}/" #}
 

@@ -1,0 +1,21 @@
+---
+title: poceMons Detail
+layout: layouts/base.njk  
+pagination:
+  data: detail
+  size: 1
+  alias: detail 
+permalink: pockdetails/{{detail.name}}/index.html
+---
+
+<section class= "detail-page">
+    <div class="wrapper">
+        <h2 class="heading">Detail Page Here</h2>
+        <ul class="detail-list">
+            <li class="data-item">
+                <span class="name">{{detail.name}}</span>
+            </li>
+        </ul>
+    </div>
+
+</section>
