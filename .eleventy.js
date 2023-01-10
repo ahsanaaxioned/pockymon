@@ -14,6 +14,7 @@ eleventyConfig.setLibrary('md', markdownLib);
   eleventyConfig.addPassthroughCopy("./image");
   eleventyConfig.addPassthroughCopy("./js");
   return {
+    markdownTemplateEngine: "njk",
     dir: {
       output: "_site",
       data: "_data"
