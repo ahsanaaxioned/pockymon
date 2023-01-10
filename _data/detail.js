@@ -8,38 +8,4 @@ module.exports = async function () {
         console.error(error);
     }
 }
-// fetchFunc();
 
-
-// getData = datas => {
-//     datas.forEach(async res => {
-//         // console.log(res.url);
-//         try {
-//             const resFet = await axios.get(res.url);
-//             //    console.log(resFet.data);
-//             creatData(resFet.data);
-//         } catch (er) {
-//             console.error(er);
-//         }
-
-//     });
-
-// }
-// let arrayName = [];
-// const creatData = resFet => {
-//     // console.log(resFet.data.name);
-//     if (resFet) {
-//         let finalOutput = resFet.name;
-//         arrayName.push(finalOutput);
-//         console.log(arrayName);
-//         // console.log(resFet.name);
-//         return arrayName;
-//     }
-//     //  return   finalVal.name;
-
-// }
-
-
-
-
-// module.exports = creatData();
